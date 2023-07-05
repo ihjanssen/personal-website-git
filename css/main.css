@@ -1,0 +1,168 @@
+html {
+    font-size: 62.5%;
+    background-color:whitesmoke;
+}
+
+body {
+    margin: 0;
+    
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4rem
+}
+
+nav {
+    margin: 4em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+    margin: 1 0;
+}
+
+nav ul li {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    position: relative;
+    
+}
+
+.home {
+    visibility: hidden;
+    font-size: 0rem;
+}
+
+.projects {
+    visibility: hidden;
+    font-size: 0rem;
+}
+
+.sound {
+    visibility: hidden;
+    font-size: 0rem;
+}
+
+.contact {
+    visibility: hidden;
+    font-size: 0rem;
+}
+
+.house {
+    transition: transform 400ms ease-out;
+    will-change: transform;
+    transition-delay: 10ms;
+}
+
+.house:hover {
+    transition: transform 250ms;
+    transform: translateX(-10px) scale(1.5);
+    transition-delay: 0ms;  
+}
+
+.code {
+    transition: transform 350ms ease-out;
+    will-change: transform;
+    transition-delay: 10ms;
+}
+
+.code:hover {
+    transition: transform 350ms;
+    transform: translateX(-10px) scale(1.5);
+    transition-delay: 0ms;  
+}
+
+.music {
+    transition: transform 400ms ease-out;
+    will-change: transform;
+    transition-delay: 10ms;
+}
+
+.music:hover {
+    transition: transform 350ms;
+    transform: translateX(-10px) scale(1.5);
+    transition-delay: 0ms; 
+}
+
+.mail {
+    transition: transform 400ms ease-out;
+    will-change: transform;
+    transition-delay: 10ms;
+}
+
+.mail:hover {
+    transition: transform 350ms;
+    transform: translateX(-10px) scale(1.5); 
+    transition-delay: 0ms; 
+}
+
+/*.house:hover + .home{
+    visibility: visible;
+    color: black;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in;
+}
+
+.code:hover + .projects{
+    visibility: visible;
+    color: black;
+    font-size: 1.5rem;
+    transition: all 0.35s ease-in;
+}
+
+.music:hover + .sound{
+    visibility: visible;
+    color: black;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in;
+}
+
+.mail:hover + .contact{
+    visibility: visible;
+    color: black;
+    font-size: 1.5rem;
+    transition: all 0.35s ease-in;
+}*/
+
+.code {
+    width: 33px;
+    
+}
+
+.music {
+    width: 20px;
+}
+
+.phone {
+    width: 27px;
+}
+
+.hidden {
+    display: none;
+}
+
+.displayed:hover + .hidden {
+    display: block;
+    color: red;
+}
